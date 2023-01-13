@@ -6,6 +6,26 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'Moment',
+              style: TextStyle(
+                  color: Colors.black, fontFamily: 'Kalam', fontSize: 32.0),
+            ),
+            Row(children: [
+              Icon(Icons.add),
+              Padding(
+                  padding: const EdgeInsets.all(24.0),
+                  child: Icon(Icons.favorite)),
+            ])
+          ],
+        ),
+      ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

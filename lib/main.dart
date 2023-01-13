@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:moment/feed_page.dart';
 import 'package:moment/homepage.dart';
+import 'package:moment/pages/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.grey,
       ),
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: LoginPage(),
+      /*routes: {
+        '/': (BuildContext context) => HomePage(),
+        '/login': (BuildContext context) => LoginPage(),
+      },*/
     );
   }
 }
